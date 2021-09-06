@@ -59,58 +59,51 @@ void digitos(int i){
   digitalWrite(latch,HIGH); 
   delayMicroseconds(20);
   digitalWrite(latch,LOW);
-  // select the fourth segment from left
+  
   shiftOut(data,clock,MSBFIRST,digit[4]);  
-  // show the digit "5" ( the array starts with 0 to count!)
+  
   shiftOut(data,clock,MSBFIRST,value[m/1000]);  
   digitalWrite(latch,HIGH);
   delayMicroseconds(20);
+
   digitalWrite(latch,LOW);
-  // select the fourth segment from left
   shiftOut(data,clock,MSBFIRST,digit[5]);  
-  // show the digit "5" ( the array starts with 0 to count!)
   shiftOut(data,clock,MSBFIRST,value[c/100]);  
   digitalWrite(latch,HIGH);
   delayMicroseconds(20);
   digitalWrite(latch,LOW);
-  // select the fourth segment from left
+
   shiftOut(data,clock,MSBFIRST,digit[6]);  
-  // show the digit "5" ( the array starts with 0 to count!)
   shiftOut(data,clock,MSBFIRST,value[d/10]);  
   digitalWrite(latch,HIGH);
   delayMicroseconds(20);
   digitalWrite(latch,LOW);
-  // select the fourth segment from left
+
   shiftOut(data,clock,MSBFIRST,digit[7]);  
-  // show the digit "5" ( the array starts with 0 to count!)
   shiftOut(data,clock,MSBFIRST,value[u]);  
   digitalWrite(latch,HIGH); 
   delayMicroseconds(20);
   digitalWrite(latch,LOW);
-  // select the fourth segment from left
+
   shiftOut(data,clock,MSBFIRST,digit[0]);  
-  // show the digit "5" ( the array starts with 0 to count!)
   shiftOut(data,clock,MSBFIRST,B11001000);  
   digitalWrite(latch,HIGH); 
   delayMicroseconds(20);
   digitalWrite(latch,LOW);
-  // select the fourth segment from left
+
   shiftOut(data,clock,MSBFIRST,digit[1]);  
-  // show the digit "5" ( the array starts with 0 to count!)
   shiftOut(data,clock,MSBFIRST,B10001001);  
   digitalWrite(latch,HIGH); 
   delayMicroseconds(20);
   digitalWrite(latch,LOW);
-  // select the fourth segment from left
+  
   shiftOut(data,clock,MSBFIRST,digit[2]);  
-  // show the digit "5" ( the array starts with 0 to count!)
   shiftOut(data,clock,MSBFIRST,value[3]);  
   digitalWrite(latch,HIGH); 
   delayMicroseconds(20);
   digitalWrite(latch,LOW);
-  // select the fourth segment from left
+  
   shiftOut(data,clock,MSBFIRST,digit[3]);  
-  // show the digit "5" ( the array starts with 0 to count!)
   shiftOut(data,clock,MSBFIRST,B01111111);  
   digitalWrite(latch,HIGH); 
 
